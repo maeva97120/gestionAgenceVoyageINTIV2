@@ -1,0 +1,11 @@
+package com.inti.test;
+
+public class Personne {
+private Long idPersonne;
+private String nomPersonne;
+private int age;
+	
+public Personne() {
+	}
+
+}

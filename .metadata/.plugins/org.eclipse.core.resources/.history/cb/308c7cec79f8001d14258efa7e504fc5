@@ -1,0 +1,10 @@
+package com.inti.test;
+
+public class Personne {
+
+	public Personne() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+}

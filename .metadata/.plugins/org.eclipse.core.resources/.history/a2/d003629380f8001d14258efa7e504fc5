@@ -1,0 +1,46 @@
+package com.inti.test;
+
+public class Personne {
+	private Long idPersonne;
+	private String nomPersonne;
+	private int age;
+
+	public Personne() {
+	}
+
+	public Personne(Long idPersonne, String nomPersonne, int age) {
+		this.idPersonne = idPersonne;
+		this.nomPersonne = nomPersonne;
+		this.age = age;
+	}
+
+	public Long getIdPersonne() {
+		return idPersonne;
+	}
+
+	public void setIdPersonne(Long idPersonne) {
+		this.idPersonne = idPersonne;
+	}
+
+	public String getNomPersonne() {
+		return nomPersonne;
+	}
+
+	public void setNomPersonne(String nomPersonne) {
+		this.nomPersonne = nomPersonne;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	@Override
+	public String toString() {
+		return "Personne [idPersonne=" + idPersonne + ", nomPersonne=" + nomPersonne + ", age=" + age + "]";
+	}
+
+}
