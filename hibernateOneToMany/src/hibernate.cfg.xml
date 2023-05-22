@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+ 		<!-- Configuration de la connexion -->
+		<property name="hibernate.connection.url">
+			jdbc:mysql://localhost:3306/hibernate_one_to_many_db?createDatabaseIfNotExist=true
+		</property>
+		<property name="hibernate.connection.username">
+			root
+		</property>
+		<property name="hibernate.connection.password">
+		</property>
+		<property name="hibernate.connection.driver_class">
+			com.mysql.jdbc.Driver
+		</property>
+		<!-- Fin de la configuration -->
+		<!-- Configuration des propriétés de hibernate -->
+		<!-- Les valeurs possibles : create, create-drop, update, validate -->
+		<property name="hibernate.hbm2ddl.auto">
+			create
+		</property>
+		<!-- Déclarer le dialect correspondant à MySQL -->
+		<property name="hibernate.dialect">
+			org.hibernate.dialect.MySQL5Dialect
+		</property>
+		<!-- Afficher les requêtes SQL générées -->
+		<property name="hibernate.show_sql">true</property>
+		<!-- Fin de configuration -->
+		<mapping class="com.inti.entities.Societe"/>
+		<mapping class="com.inti.entities.Departement"/>
+	</session-factory>
+</hibernate-configuration>
